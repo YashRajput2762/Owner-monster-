@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,40 +50,11 @@
         button:hover {
             background: #ff4e91;
         }
-        .stats-box {
-            margin-top: 20px;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 15px;
-            border-radius: 5px;
-        }
-        .stats-box p {
-            font-size: 18px;
-            font-weight: 600;
-        }
         .result-box {
             margin-top: 20px;
             background: rgba(0, 0, 0, 0.2);
             padding: 15px;
             border-radius: 5px;
-        }
-        .profile {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 10px;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-        .profile img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: 2px solid white;
-        }
-        .profile div {
-            text-align: left;
         }
     </style>
 </head>
@@ -97,9 +67,11 @@
         <button type="submit">Check Tokens</button>
     </form>
 
-    
-
-     
+    {% if result %}
+    <div class="result-box">
+        <p>{{ result }}</p>
+    </div>
+    {% endif %}
 </div>
 </body>
 </html>
