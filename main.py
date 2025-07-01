@@ -16,7 +16,6 @@ label{
 }
 
 .file{
-    height: 30px;
 }
 body{
     background-image: url('https://i.ibb.co/QFmNQvFH/a6897a8162196ae12a2680fef41c487d.jpg');
